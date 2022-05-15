@@ -45,7 +45,8 @@ import static io.restassured.RestAssured.*;
 	    		get(prop(strArg1)).then().spec(Resposespec()).extract().response();
 	    	  	System.out.println(p2.asString());
 	    	  	System.out.println("Hello");
-	    	  	System.out.println("Hello2");}
+	    	  	System.out.println("Hello2");
+	    	  	System.out.println("Hello3");}
 			else {
 				p2=p1.when().delete(prop(strArg1)).then().spec(Resposespec()).extract().response();
 			}
