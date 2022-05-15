@@ -43,7 +43,8 @@ import static io.restassured.RestAssured.*;
 			else if(strArg2.equalsIgnoreCase("GET"))
 	    	{p2=given().spec(Requestspec()).queryParam("place_id",id).when().
 	    		get(prop(strArg1)).then().spec(Resposespec()).extract().response();
-	    	  	System.out.println(p2.asString());}
+	    	  	System.out.println(p2.asString());
+	    	  	System.out.println("Hello");}
 			else {
 				p2=p1.when().delete(prop(strArg1)).then().spec(Resposespec()).extract().response();
 			}
