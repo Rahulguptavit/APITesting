@@ -44,7 +44,8 @@ import static io.restassured.RestAssured.*;
 	    	{p2=given().spec(Requestspec()).queryParam("place_id",id).when().
 	    		get(prop(strArg1)).then().spec(Resposespec()).extract().response();
 	    	  	System.out.println(p2.asString());
-	    	  	System.out.println("Hello");}
+	    	  	System.out.println("Hello");
+	    	  	System.out.println("Hello2");}
 			else {
 				p2=p1.when().delete(prop(strArg1)).then().spec(Resposespec()).extract().response();
 			}
